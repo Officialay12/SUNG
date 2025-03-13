@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUNG TECH</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      background: linear-gradient(90deg, #0d0c1a, #2856ee, #e4f30d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% auto;
+      animation: glow 2s linear infinite;
+    }
+
+    @keyframes glow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .typewriter {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      overflow: hidden;
+      border-right: 0.15em solid rgb(157, 255, 0);
+      white-space: nowrap;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+
+    .button {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: #fff;
+      background: linear-gradient(90deg, #436df8, #ceee17);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .button:hover {
+      animation: none;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SUNG TECH</h1>
+    <div class="typewriter">Innovating the future of web technology...</div>
+    <a href="aot1.html"><button class="button" onclick="alert('Welcome to SUNG TECH!')">FREE EDITS</button></a>
+  </div>
+
+  <script>
+    // Optional: Add additional JavaScript functionality here
+  </script>
+</body>
+</html>
